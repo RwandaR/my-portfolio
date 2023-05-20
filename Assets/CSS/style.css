@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    /* overflow-wrap: hidden; */
+    /* overflow-clip-margin: ; */
+    
+}
+
+body{
+    background: white;;
+    color: #fff;
+    
+}
+
+/* html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+} */
+
+#header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/Assets/img/flower-side.jpg);
+    background-size:cover;
+    background-position:center;
+
+}
+.container{
+    padding: 1px 10%;
+}
+
+nav{
+    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.logo{
+    width: 100px;
+    margin-left: -150px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 25px 15px;
+    margin-top: 38px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #E9BB00;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+nav li:first-letter{
+    font-size: 25px;
+}
+nav li:hover::first-letter{
+    color: lightpink;
+    font-weight: 500;
+}
+
+.header-text{
+    margin-top: 13%;
+    margin-left: -10%;
+    font-size: 30px;
+    
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    color: lightpink;
+}
+
+.header-text h1 span{
+    color: #E9BB00;
+}
+
+/* ------------about---------- */
+
+#about{
+    padding: 80px 0;
+    color: lightpink;
+}
+
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 75px;
+    size: 20px;
+    padding-left: 40px;
+}
+
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.about-col-2 h1{
+    padding-bottom: 20px;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: lightpink;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    color: black
+}
+
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: lightpink;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 60%;
+}
+
+tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: lightpink;
+    font-size: 14px;
+}
+.dot{
+    color: black;
+}
+.me{
+    color:#E9BB00;
+}
+
+.about-me{
+    color: black;
+}
+
+.my-skill{
+    color: black;
+}
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+/* --------services----- */
+
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.site-title{
+    color: black;
+    text-align: left;
+    
+}
+
+
+.about-site{
+    color:black;
+}
+
+/* site-boxes */
+
+.services-list div{
+    background: lightpink;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    /* background: yellow; */
+    transform: translateY(-10px);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(255, 255, 255), #E9BB00);
+    border-radius: 10px;
+    
+}
+
+/* --------My Socials------ */
+#socials{
+    padding:60px 0;
+}
+.work-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 0px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    size: 6px;
+    padding: 10px;
+    transition: transform 0.5s;
+}
+
+
+.connect:hover{
+    transform: translateY(-12px);
+    transition: background 0.5s, transform 0.5s;
+}
+
+.layer{
+    color: black;
+    text-align: center;
+}
+.layer h3{
+    font-weight: 700;
+    margin-bottom: 10px
+}
+
+.layer a{
+    margin-top: 10px;
+    color: lightpink;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    /* background: black; */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.5s;
+
+}
+.btn:hover{
+    background: lightpink;
+}
+
+.email, .phone{
+    color:black;
+}
+
+#social-pic{
+
+}
