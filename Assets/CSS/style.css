@@ -187,10 +187,17 @@ nav li:hover::first-letter{
 
 .btn.btn2{
     background:lightpink;
-    margin-right: 150px;
-    margin-bottom: -5px;
-    /* <---- add this to href tag in html with my link to resume (download) ----> */
+    margin-right: 320px;
+    margin-bottom: -35px;
+    margin-top: -35px;
+    font-size: 25px;
 
+}
+
+.sun{
+    width: 500px;
+    margin-left: 1200px;
+    margin-top: -850px;
 }
 
 .about-col-2{
@@ -251,7 +258,7 @@ tab-contents ul li{
 
 .tab-contents ul li span{
     color: lightpink;
-    font-size: 14px;
+    font-size: 24px;
 }
 .dot{
     color: black;
@@ -269,7 +276,12 @@ tab-contents ul li{
 
 .my-skill{
     color: black;
+    font-size: 18px;
 }
+
+
+
+
 .tab-contents{
     display: none;
 }
@@ -424,6 +436,7 @@ tab-contents ul li{
 
 .email, .phone{
     color:black;
+    font-size: 30px;;
 }
 
 /* #social-pic{
