@@ -175,7 +175,7 @@ nav li:hover::first-letter{
     padding-left: 40px;
 }
 
-/* *************************************** */
+/* /* *************************************** * */
 .about-col-3{
     flex-basis: 35%;
     /* align-items:center; */
