@@ -7,29 +7,40 @@
     <title>Rwanda's Portfolio Website</title>
     <link rel="stylesheet" href="/Assets/CSS/style.css">
     <script src="https://kit.fontawesome.com/f468652737.js" crossorigin="anonymous"></script>
+
+    
 </head>
 <body>
 <div id="header">
     <div class="container">
-    <nav>
+        <div class="navigations"> 
+    <nav class="nav-links">
         <img src="/Assets/img/flower-logo.png" class="logo">
-        <ul>
-            <li><a href="#"> <span id="nav-name">Home.</span></a></li>
-            <li><a href="#"> About.</a></li>
-            <li><a href="#"> Projects.</a></li>
-            <li><a href="#"> Contact.</a></li>
+        <ul id="sidemenu">
+            <li><a href="#header"> <span id="nav-name">Home.</span></a></li>
+            <li><a href="#about"> About.</a></li>
+            <li><a href="#services"> Projects.</a></li>
+            <li><a href="#socials"> Socials.</a></li>
+            <li><a href="#contact"> Contact.</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()";"></i>
         </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     </nav>
-<div class="header-text">
-    <p>Junior Web Developer</p>
-    <h1> Hi, I'm <span>Rwanda</span><br> Reed From<br> Maryland<span class="dot">.</span> </h1>
+        </div>
+        <div class="jwd">
+            <p>Junior Web Developer</p>
+                <br>
+                <h1> Hi, I'm <span>Rwanda</span><br> Reed From<br> Maryland<span class="dot">.</span> </h1>
+        </div>
 
-</div>
-
+        <div class="bloom-text">
+            <h1 class="bloom"><span>Bloom</span> where you are planted<span class="dot">.</span> </h1>
+        </div>
+    
     </div>
 </div>
 
-<!-- ---------about------------>
+<!-- ---------about-------------------->
 <div id="about">
     <div class="containter">
             <div class="row">
@@ -45,19 +56,26 @@
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
+                    
+        
 
-            <!---------Skills tab---------->
+            <!---------Skills tab--------------->
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span><strong>HTML</strong></span><br><p class="my-skill"><em>Knowledge of HTML syntaxes</em></p></li>
-                            <li><span><strong>CSS</strong></span><br><p class="my-skill"><em>Knowledge of CSS syntaxes</em></p></li>
-                            <li><span><strong>JavaScript</strong></span><br><p class="my-skill"><em>Knowledge of JS syntaxes</em></p></li>
-                            <li><span><strong>Bootstrap</strong></span><br><p class="my-skill"><em>Knowledge of Bootstrap syntaxes</em></p></li>
-                            <li><span><strong>Git</strong></span><br><p class="my-skill"><em>Knowledge of Git syntaxes</em></p></li>
+                            <li ><span><strong>HTML</strong></span><br>
+                                <p class="my-skill"><em>Knowledge of HTML syntaxes</em></p></li>
+                            <li><span><strong>CSS</strong></span><br>
+                                    <p class="my-skill"><em>Knowledge of CSS syntaxes</em></p></li>
+                            <li><span><strong>JavaScript</strong></span><br>
+                                    <p class="my-skill"><em>Knowledge of JS syntaxes</em></p></li>
+                            <li><span><strong>Bootstrap</strong></span><br>
+                                    <p class="my-skill"><em>Knowledge of Bootstrap syntaxes</em></p></li>
+                            <li><span><strong>Git</strong></span><br>
+                                    <p class="my-skill"><em>Knowledge of Git syntaxes</em></p></li>
                         </ul>
                     </div>
 
-            <!---------Experience tab---------->
+            <!---------Experience tab----------------->
             <div class="tab-contents" id="experience">
                 <ul>
                     <li><span><strong>Generation Junior Web Developer Program</strong></span><br><p class="my-skill"><em>Training Participant
@@ -74,7 +92,7 @@
                 </ul>
             </div>
 
-            <!---------Education tab---------->
+            <!---------Education tab--------------->
             <div class="tab-contents" id="education">
                 <ul>
                     <li><span><strong>Virginia Wesleyan College</strong></span><br><p class="my-skill"><em>Bachelors of Arts in Psychology</em></p></li>
@@ -82,15 +100,19 @@
                     <li><span><strong>Bethel High School</strong></span><br><p class="my-skill"><em>High School Diploma</em></p></li>
 
                 </ul>
+                
             </div>
-
+                
 
                 </div>
             </div>
     </div>
+    <div class="about-col-3">
+        <a href="#" class="btn btn2">Download Resume</a>
+    </div>
 </div>
 
-<!-- -------------services------  -->
+<!-- -------------Projects------ ---------- -->
 <div id="services">
     <div class="container">
         <h1 class="sub-title">my<span class="me">Projects</span><span class="dot">.</span></h1>
@@ -98,28 +120,28 @@
             <div> 
                 <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
                 <h2 class="site-title">E-Commerce</h2>
-                <p class="about-site"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit recusandae deserunt aliquid nulla minus expedita. </p>
+                <p class="about-site"> Online shopping sites, small business's etc. </p>
                 <a href="#">View More</a>
             </div>
 
             <div> 
                 <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
                 <h2 class="site-title">Food</h2>
-                <p class="about-site"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit recusandae deserunt aliquid nulla minus expedita. </p>
+                <p class="about-site"> Sites for resturants, food brands and blogs.</p>
                 <a href="#">View More</a>
             </div>
 
             <div> 
                 <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
                 <h2 class="site-title">Miscellanous</h2>
-                <p class="about-site"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit recusandae deserunt aliquid nulla minus expedita. </p>
+                <p class="about-site"> Other sites such as book publishing sites, online services, & much more!</p>
                 <a href="#">View More</a>
             </div>
         </div>
     </div>
 </div>
 
-<!-- --------------Socials------------- -->
+<!-- --------------Socials------------- ------->
 
 <div id="socials">
     <div class="container">
@@ -127,25 +149,25 @@
             <div class="work-list">
                 <div class="work">
                     <a href="https://github.com/RwandaR" target="_blank"><img class="connect" src="/Assets/img/social-media.png"></a>                    <div class="layer">
-                        <h3>Github</h3>
-                         <p>Let's Network!</p>
-                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffb7c0;"></i></a>
+                        <a href="https://github.com/RwandaR" target="_blank"><h3>Github</h3></a>
+                         <p>Let's Collaborate!</p>
+                         <a href=""https://github.com/RwandaR" target="_blank""><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffb7c0;"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <a href="https://github.com/RwandaR"></a><img class="connect" id="social-pic" src="/Assets/img/linkedin.png">
+                    <a href="https://www.linkedin.com/in/rwandar" target="_blank"><img class="connect" id="social-pic" src="/Assets/img/linkedin.png"></a>
                     <div class="layer">
-                        <h3>Linkedin</h3>
-                         <p>Let's Network!</p>
-                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffb7c0;"></i></a>
+                        <a href="https://www.linkedin.com/in/rwandar" target="_blank"><h3>Linkedin</h3></a>
+                         <p>Let's Connect!</p>
+                         <a href="https://www.linkedin.com/in/rwandar" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffb7c0;"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img class="connect" src="/Assets/img/discord.png">
+                    <a href="https://discord.com/channels/@me" target="_blank"><img class="connect" src="/Assets/img/discord.png"></a>
                     <div class="layer">
-                        <h3>Discord</h3>
+                        <a href="https://discord.com/channels/@me" target="_blank"><h3>Discord</h3></a>
                          <p>Let's Network!</p>
-                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffb7c0;"></i></a>
+                         <a href="https://discord.com/channels/@me" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffb7c0;"></i></a>
                     </div>
                 </div>
             </div>
@@ -159,17 +181,29 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">contact<span class="me">Me</span><span class="dot">.</span></h1>
-                <p class="email">Rwandareed@gmail.com</p>
-                <p class="phone">757-291-3163</p>
+                <p class="email"> <i class="fa-solid fa-envelope" style="color: #ffb7c0;"></i>Rwandareed@gmail.com</p>
+                <p class="phone"><i class="fa-solid fa-phone" style="color: #ffb7c0;"></i>757-291-3163</p>
                 <div class="contact-icons">
-                    <a href=""><i class="fa-solid fa-envelope" style="color: #ffb7c0;"></i></a>
-                    <i class="fa-solid fa-phone" style="color: #ffb7c0;"></i>
+                    <a href=""></a>
+                    
                 </div>
             </div>
-            <div class="contact-right"></div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
+    <div class="copyright">
+        <p>Rwanda Reed Portfolio Website. </p>
+    </div>
 </div>
+    
+        
 
 
 <script>
@@ -190,6 +224,17 @@
     }
 </script>
 
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+    
 </body>
 </html>
 
